@@ -15,10 +15,13 @@ class MyApp extends StatelessWidget {
           title: Text('EasyList'),
         ),
         body: Column(children: <Widget>[
-          RaisedButton(
-            child: Text('Add something'),
-            onPressed: () {}
-          ),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            child:
+                RaisedButton(
+                  child: Text('Add something'), 
+                  onPressed: () {}
+                )),
           Card(
               child: Column(
             children: <Widget>[
