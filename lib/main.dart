@@ -5,7 +5,15 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _MyAppState();
+  }
+}
+
+class _MyAppState extends State<MyApp> { // This class extends the State object(??) of MyApp
   @override // MyApp's build() method overrides the build() method already present in StatelessWidget
   Widget build(BuildContext context) {
     // Give the build() method what type it should return - here its a widget
